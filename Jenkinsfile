@@ -1,10 +1,4 @@
 pipeline {
-    agent {
-        docker {
-            image 'maven:3-jdk-8-alpine'
-            args '-v maven-jenkins:/root/.m2'
-        }
-    }
     stages {
         stage('Build') {
             steps {
